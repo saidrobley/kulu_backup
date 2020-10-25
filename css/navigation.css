@@ -1,0 +1,136 @@
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  color: #fff;
+  border: 1px solid black;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 0rem 3rem;
+}
+#mobile-menu {
+  display: none;
+}
+#navbar .logo {
+  height: 60px;
+  border-radius: 5%;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  color: #333;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+#navbar ul li #donate-btn {
+  background-color: #ff7f50;
+  padding: 0.75rem;
+  border-radius: 5px;
+
+  padding: 0.75rem 1rem;
+}
+#navbar ul li #donate-btn {
+  color: white;
+}
+#navbar ul li #donate-btn:hover {
+  background: #93cb52;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  #mobile-menu {
+    display: none;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 0;
+  }
+
+  #navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #navbar ul li a {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    position: fixed;
+    top: 69px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #navbar ul {
+    margin-bottom: 0;
+  }
+
+  #navbar ul li {
+    border-bottom: 1px solid black;
+  }
+  #navbar ul li:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+  #navbar ul li a:hover,
+  #navbar ul li #donate-btn:hover {
+    background: green;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #mobile-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid black;
+  }
+
+  #mobile-menu img {
+    width: 50%;
+    height: 50%;
+  }
+  #mobile-menu #hamburger .line-hambergur {
+    width: 50px;
+    height: 3px;
+    display: block;
+    background-color: black;
+    margin: 8px;
+  }
+  #mobile-menu #hamburger:hover {
+    cursor: pointer;
+  }
+  #navbar ul li #donate-btn:hover {
+    background: green;
+  }
+}
